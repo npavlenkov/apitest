@@ -142,7 +142,7 @@ public class TaskPost extends BaseApi {
                 .when()
                 .get(s + "/api/users?delay=3")
                 .then()
-                .body("data.first_name[0]", equalTo("Michael"))
+                .body("data.first_name[0]", equalTo("George"))
                 .statusCode(200)
                 .log().all();
     }
